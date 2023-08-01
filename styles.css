@@ -1,6 +1,6 @@
 div{
   width : 100% ; 
-  height : 5% ;
+  height : 11% ;
   }
 .header-right-space{
   border:1px solid black ; 
@@ -13,6 +13,9 @@ div{
 }
 .header-left-space{
   border:1px solid black ; 
+}
+li{
+display : inline-block;
 }
   
   
