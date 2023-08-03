@@ -1,38 +1,204 @@
-.container {
-	    margin-left: 15%;
-		margin-right: 15%;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; /* Three equal-width columns */
-		background-color: transparent ; 
-	  }
-.column {
-	    display: grid ;
-		box-sizing: border-box; 
-		align-items: center
-		
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.header-nav{
-	border : 0px transparent  ;
-	background-color: transparent ;
-	font-family: 'Source Code Pro', monospace;
-	font-size: 15px;
-	font-weight: 600;
-	letter-spacing: 0.2px;
+.main-section-1 {
+  position: relative;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 70vh;
+  background: linear-gradient(230deg, #f533d4, #2461bb);
+  background-blend-mode: luminosity;
+  display: flex;
+  z-index: initial;
 }
-.stripe-logo-nav{
-    width: 5rem;
-	height: 2rem;
+
+.main-section-1::before {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  transform: skewY(-10deg);
+  transform-origin: top left;
+  background-color: #fff;
 }
-.column a{
-	text-decoration: none ;
-	font-family: 'Source Code Pro', monospace;
-	    font-size: 15px;
-	    font-weight: 600;
-		letter-spacing: 0.2px;
-		background-color: transparent;
-		text-align: center;
-		color: black;
-		margin: 0 ; 
-		padding: 0 ;
+
+.main-section-2 {
+  position: relative;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 115vh;
+  background-color: #fff;
+  display: flex;
+  transform: skewY(-10deg);
+  transform-origin: top left;
+  z-index: initial;
+}
+
+.main-section-2::after {
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  transform: skewY(10deg);
+  transform-origin: bottom left;
+  background-color: #fff;
+}
+
+.main-section-3 {
+  height: 210vh;
+  background-color: #f6f9fc;
+}
+
+.main-section-3::after {
+  transform: skewY(-10deg);
+  transform-origin: bottom right;
+  background: inherit;
+}
+
+.main-section-4 {
+  position: relative;
+  width: 100%;
+  height: 165vh;
+  background-color: #0a2540;
+  transform: skewY(-10deg);
+  transform-origin: top left;
+}
+
+.main-section-4::before {
+  content: "";
+  position: absolute;
+  bottom: -60%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skewY(10deg);
+  transform-origin: bottom left;
+  background-color: #fff;
+}
+
+.main-section-5 {
+  height: 170vh;
+  background-color: #ffffff;
+}
+
+.main-section-6 {
+  box-sizing: border-box;
+  height: 280vh;
+  background-color: #f6f9fc;
+}
+
+.main-section-7 {
+  position: relative;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 115vh;
+  background-color: #0a2540;
+  display: flex;
+  transform: skewY(-10deg);
+  transform-origin: top left;
+}
+
+.main-section-8 {
+  position: relative;
+  width: 100%;
+  height: 165vh;
+  background-color: #ffffff;
+  transform: skewY(-10deg);
+  transform-origin: top left;
+}
+
+.main-section-8::after {
+  bottom: -60%;
+  height: 110%;
+  width: 100%;
+  transform: skewY(10deg);
+  transform-origin: bottom left;
+}
+
+.main-section-9 {
+  position: relative;
+  height: 90vh;
+  background-color: #f6f9fc;
+}
+
+.main-section-10 {
+  width: 100%;
+  height: 135vh;
+  background-color: #fff;
+  position: relative;
+  transform: skewY(-10deg);
+  transform-origin: top left;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.main-section-10::after {
+  width: 100%;
+  bottom: 0%;
+  height: 40%;
+  transform: skewY(10deg);
+  transform-origin: bottom left;
+  background-color: #fff;
+  position: absolute;
+}
+
+.container {
+  margin-left: 12vw;
+  margin-right: 12vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* Three equal-width columns */
+  background-color: transparent;
+  position: relative;
+}
+
+.column {
+  display: grid;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.header-nav {
+  border: 0px transparent;
+  background-color: transparent;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.2px;
+}
+
+.stripe-logo-nav {
+  width: 5rem;
+  height: 2rem;
+  background-color: transparent;
+}
+
+.column a {
+  text-decoration: none;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  background-color: transparent;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.column:hover {
+  color: #e0cef6;
+}
+
+.arrow {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  text-decoration: none;
 }
