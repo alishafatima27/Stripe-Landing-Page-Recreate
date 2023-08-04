@@ -173,9 +173,14 @@ letter-spacing: 0.2px;
 }
 .stripe-logo-nav{
 width: 5rem;
-height: 2rem;
+height: 2.5rem;
 margin-left:.8rem;
-background-blend-mode: color-burn;}
+font-family: 'Montserrat', sans-serif;
+font-weight: 900;
+letter-spacing: -1px;
+font-size:x-large;
+text-align: right;
+}
 .column a{
 text-decoration: none ;
 font-family: 'Source Code Pro', monospace;
