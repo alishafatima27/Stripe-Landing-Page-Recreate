@@ -2,7 +2,13 @@ body{
     margin: 0 ;
     padding: 0 ;
 }
-
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
 .main-section-1{
     width: 100vw;
     height: 100vh;
@@ -11,6 +17,7 @@ body{
     mix-blend-mode: luminosity;
     background-size: 400% 400%;
     animation: gradientAnimation 10s linear infinite;
+    
 }
 
 @keyframes gradientAnimation {
@@ -24,6 +31,7 @@ body{
         background-position: 0% 50%;
     }
 }
+
 .main-section-2{
     position: relative;
     box-sizing: border-box ;
@@ -143,8 +151,9 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; /* Three equal-width columns */
     background-color: transparent ; 
-    position: relative;
+    position: absolute;
     mix-blend-mode: multiply;
+    z-index: 1 ;
   }
 .column {
     display: grid ;
@@ -190,3 +199,5 @@ letter-spacing: 0.2px;
 text-decoration: none;
 
 }
+
+
